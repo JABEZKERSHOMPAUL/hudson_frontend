@@ -1,0 +1,30 @@
+/* ThankYou.css */
+
+.thank-you-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .thank-you-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thank-you-content h1 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .thank-you-content p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* You can customize the colors, fonts, and spacing according to your design preferences */
+  

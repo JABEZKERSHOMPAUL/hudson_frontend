@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.registration-container {
+    background-color: #f9e000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+}
+
+.registration-container h1 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+select,
+input[type="file"] {
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    height: 35px;
+}
+
+button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #111;
+}
+
+.admin {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.admin:hover {
+    background-color: #ddd;
+}
