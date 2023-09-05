@@ -36,71 +36,6 @@ function Register() {
     }
   };
 
-  // const handleSubmit = async (e) => {
-  //     e.preventDefault();
-
-  //     if (userRegister.confirmpassword !== userRegister.password) {
-  //         toast.error("password does not match")
-  //     }
-
-  //     if (userRegister.email === "") {
-  //         toast.error("Email Required")
-  //         return;
-  //     }
-  //     if (userRegister.password === "") {
-  //         toast.error("Password Required")
-  //         return;
-  //     }
-  //     if (userRegister.age === "") {
-  //         toast.error("age Required")
-  //         return;
-  //     }
-  //     if (userRegister.firstName === "") {
-  //         toast.error("first Name Required")
-  //         return;
-  //     }
-  //     if (userRegister.lastName === "") {
-  //         toast.error("last Name Required")
-  //         return;
-  //     }
-  //     if (userRegister.pdf === "") {
-  //         toast.error("Required")
-  //         return;
-  //     }
-  //     if (userRegister.gender === "") {
-  //         toast.error("gender Required")
-  //         return;
-  //     }
-  //     if (userRegister.mobile === "") {
-  //         toast.error("mobile Required")
-  //         return;
-  //     }
-
-
-
-  //     const res = await axios.post("http://localhost:8000/register/user", userRegister)
-
-  //     if (res.data.status === 1) {
-  //         toast.success(res.data.message)
-  //         localStorage.setItem('token', res.data.token)
-  //         console.log("token")
-  //         setTimeout(() => {
-
-  //             navigate('/home')
-  //         }, 3000);
-
-
-
-
-  //     } else {
-  //         toast.error(res.data.message)
-
-  //     }
-
-  // }
-  //  const handleFileChangepdf = (e) => {
-  //     setUserRegister((prevData) => ({ ...prevData, pdf: e.target.files[0] }));
-  //   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -128,7 +63,7 @@ function Register() {
     }
 
     try {
-      const res = await axios.post('http://localhost:8000/register/user', formData);
+      const res = await axios.post('https://hudson-backend.onrender.com/register/user', formData);
 
       if (res.data.status === 1) {
         toast.success(res.data.message);

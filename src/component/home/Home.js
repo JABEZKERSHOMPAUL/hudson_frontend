@@ -18,7 +18,7 @@ useEffect(()=>{
 },[location])
   useEffect(() => {
     // Fetch user data from the server
-    axios.post('http://localhost:8000/login/user')  // Update with your server endpoint
+    axios.post('https://hudson-backend.onrender.com/login/user')  // Update with your server endpoint
       .then(response => {
         setUserData(response.data);
         console.log(response)
